@@ -50,10 +50,26 @@ main {
 .left_top_section>button {
     width: 150px;
     height: 50px;
-    background-color: red;
-    color: white;
+    background-color: cyan;
+    color: black;
     border-radius: 5px;
     font-size: 18px;
+    transition: background-color 1s;
+}
+
+.left_top_section>button>span {
+    font-size: 13px;
+}
+
+.left_top_section>button:hover {
+    background-color: #004369;
+    color: white;
+}
+
+.left_top_section>button:focus,
+.left_top_section>button:active {
+    background-color: blue;
+    transition: none;
 }
 
 .right_top_section>img {
@@ -95,28 +111,29 @@ main {
     text-align: center;
     border-radius: 10px;
     padding-top: 10px;
-
+    cursor: default;
 }
 
 .cart>ul>li>a {
     text-decoration: none;
     color: black;
     font-weight: 500;
+    cursor: default;
 }
 
 #active {
-    background-color: red;
+    background-color: cyan;
 }
 
 #active>a {
-    color: white;
+    color: darkred;
 }
 
 /* middle section right */
 
 .right_middle_section {
     width: calc(100%-300px);
-    /* border: 2px solid red; */
+    /* border: 2px solid cyan; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -363,12 +380,12 @@ footer {
     #view_all {
         display: block;
         width: 100px;
-        background-color: red;
-        color: white;
+        background-color: cyan;
+        color: black;
         margin: 20px auto;
         padding: 10px;
         border-radius: 10px;
-        border: 1px solid red;
+        border: 1px solid cyan;
 
     }
 
